@@ -39,7 +39,7 @@ extern "C" {
 #endif
 
 /* ECOS VERSION NUMBER - FORMAT: X.Y.Z --------------------------------- */
-#define ECOS_VERSION ("2.0.10")
+#define ECOS_VERSION ("2.0.8")  //2.0.10 real version
 
 /* DEFAULT SOLVER PARAMETERS AND SETTINGS STRUCT ----------------------- */
 #define MAXIT      (100)          /* maximum number of iterations         */
