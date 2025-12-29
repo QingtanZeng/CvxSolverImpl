@@ -1,6 +1,5 @@
-using SCS, ECOS
+using SCS
 using LinearAlgebra, SparseArrays
-using JuMP
 
 """
 min x₁² + x₂² 
@@ -8,63 +7,58 @@ s.t. [1,1   [x₁    [2
      -1,1] * x₂] =  0]
      
 The optimal solution is clearly x₁=1, x₂=1, and cost=2.
-The equivalent linear cone problem is
-min t
-s.t. Ax=b
-     [t;[x1;x2]] <₌K 0
-
 """
 # --- Problem Data ---
-# 1. Define the problem in ECOS standard form
-# z = [x₁, x₂, t]
-n = 3 # Number of variables
+# 1. Define the problem in SCS standard form
+# z = [x₁, x₂]
+n = 2 # Number of variables
 
-# Objective: minimize y=c'z
-c = [0.0, 0.0, 1.0]
+# Objective: minimize y=(1/2)x^T*P*x
+P=sparse(Float64.(I(2))*2)
+c=[0.0,0]
 
 # Equality constraints: Ax = b
 # x₁ = 1
 # x₂ = 2
-A = sparse([1.0 1.0 0.0; -1.0 1.0 0.0])
-b = [2.0; -2]
-p = length(b)
+A = sparse([1.0 1.0; -1.0 1.0])
+b = [2.0; 0]
+m = length(b)
 
-# Conic constraints: h - Gx ∈ K
-# (x₁² + x₂²) <= t²  is equivalent to [t, x₁, x₂] ∈ SecondOrderCone(3)
-# We represent [t, x₁, x₂] as h - Gx.
-# Let h = 0, then -Gx = [t, x₁, x₂].
-G = sparse([0.0 0.0 -1.0;
-    -1.0 0.0 0.0;
-    0.0 -1.0 0.0])
-h = [0.0, 0.0, 0.0]
-m = length(h) # Total dimension of cone constraints
-# Cone dimensions: One second-order cone of dimension 3.
-q =Int[3]
-ncones=1
-# no positvie cone and exponential constraints
-l=0
-nex=0
 
 # Set the problem
-pwork = ECOS.ECOS_setup(
-    n,
-    m,
-    p,
-    l,
-    ncones,
-    q,
-    nex,
-    G.nzval,
-    G.colptr .-1,
-    G.rowval .-1,
-    A.nzval,
-    A.colptr .-1,
-    A.rowval .-1,
-    c,
-    h,
-    b,
-)
-# --- Solve the problem ---
-# Call ECOS.solve with the defined parameters
-solu = ECOS.ECOS_solve(pwork) 
-ECOS.ECOS_cleanup(pwork, 0)
+# ==========================================
+# 2. 定义锥 (Cone Definitions)
+# 对应 c_wrapper.jl 中的参数 [cite: 24, 25]
+# ==========================================
+# z: Zero cone size (对应等式约束的数量)
+z = 2 
+# l: Linear cone size (对应不等式约束 Ax + s = b, s >= 0)
+l = 0
+# 其他锥参数初始化为空或 0
+bu = Float64[]      # Upper bounds for box cone
+bl = Float64[]      # Lower bounds for box cone
+q = Int[]           # Second-order cone sizes
+s = Int[]           # PSD cone sizes
+cs = Int[]          # Complex PSD cone sizes
+ep = 0              # Primal exponential cones
+ed = 0              # Dual exponential cones
+p = Float64[]       # Power cone parameters
+d = Int[]           # Log-det cone sizes
+nuc_m = Int[]       # Nuclear norm rows
+nuc_n = Int[]       # Nuclear norm cols
+ell1 = Int[]        # L1-matrix norm sizes
+sl_n = Int[]        # Ky-Fan norm cone sizes
+sl_k = Int[]        # Ky-Fan norm cone constants
+
+solver_type=SCS.DirectSolver
+
+solution = SCS.scs_solve(
+    solver_type,
+    m, n,
+    A, P, b, c,
+    z, l, bu, bl, q, s, cs, ep, ed, p, d, nuc_m, nuc_n, ell1, sl_n, sl_k,
+    verbose=true
+);
+
+solution.info.status
+solution.x
