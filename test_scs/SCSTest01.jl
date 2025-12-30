@@ -57,7 +57,8 @@ solution = SCS.scs_solve(
     m, n,
     A, P, b, c,
     z, l, bu, bl, q, s, cs, ep, ed, p, d, nuc_m, nuc_n, ell1, sl_n, sl_k,
-    verbose=true
+    verbose=true,
+    log_csv_filename = "scs_iteration_log.csv" # 指定输出文件名
 );
 
 solution.info.status
