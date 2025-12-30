@@ -20,18 +20,18 @@ only the three types of solvers and corresponding projects are focused, for real
 
 
 ## An Implementation of Douglas-Rachford Splitting(DRS) for Quadratic SOCP
-An example: \
-min x₁² + x₂² 
-s.t. [1,1   [x₁    [2
-     -1,1] * x₂] =  0]
-     x_1>=0, x_2>=0
+An example:
+
+<img width="200" height="90" alt="image" src="https://github.com/user-attachments/assets/713afa10-2484-43a5-94dc-db51dcf95037" />
+
 The optimal solution is clearly x₁=1, x₂=1, and cost=2.
 
-The convergence process is shown below, where $O(1/k)$ sublinear convergence rate is obvious
+The convergence process is shown below,
+where <b>O(1/k) sublinear convergence rate</b> is obvious
 that gap, percent of equality error, percent of primal-dual variables' change is linear 
-In the logarithmic coordinate system. \
-Therefore converge rapidly to precision solution with <3% error, which is acceptable under most 
-real-time trajectory generation cases, where feasibility is far more important than optimality and high precision,
+in the logarithmic coordinate. \
+Therefore converge rapidly to modest precision solution with <3% error, which is acceptable under most 
+real-time trajectory generation cases. <b>Feasibility is far more important than optimality and high precision</b>,
 especially requiring >10Hz updates to deal with constantly changing environment, sudden disturbance, or MPC tasks.
 
 <p align="center">
