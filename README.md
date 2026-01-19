@@ -21,6 +21,8 @@ only the three types of solvers and corresponding projects are focused, for real
    compared to updated decomposition of each iteration in IPM's newton direction;
 4. <b>Warm-start</b>, beneficial for MPC.
 
+## Documents
+More details in [**Notes on Real-time Quadratic Conic Programming**](https://qingtanzeng.github.io/projects/3_project/).
 
 ## An Implementation of Douglas-Rachford Splitting(DRS) for Quadratic SOCP
 An example:
