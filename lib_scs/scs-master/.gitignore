@@ -1,0 +1,49 @@
+# Build artifacts
+*.o
+*.a
+*.dylib
+out
+build/
+
+# IDE and editor files
+.idea
+*.vscode
+.settings
+.cproject
+.project
+.pydevproject
+.swo
+*.swp
+*.DS_Store
+*.iml
+sftp-config.json
+local.mk
+
+# Test and debug
+*.gcno
+*dSYM
+*.csv
+*.out
+
+# Documentation (generated)
+docs/*
+!docs/src
+
+# MATLAB
+*.mex*
+*.mexmaci
+*.mexa64
+*.mexmaci64
+
+# Python
+*.pyc
+python/flags.tmp
+python/.coverage
+python/build/
+python/cover/
+
+# Other
+*.log
+*demo_direct
+*demo_indirect
+examples/DIMACS/
