@@ -1,0 +1,182 @@
+[
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build",
+  "command": "/usr/bin/c++ -DCTRLC=1 -DDLONG -DLDL_LONG -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -isystem /usr/include/eigen3 -std=c++17 -o CMakeFiles/ECOSTest00.dir/test_ecos/ECOSTest00.cpp.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/test_ecos/ECOSTest00.cpp",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/test_ecos/ECOSTest00.cpp",
+  "output": "CMakeFiles/ECOSTest00.dir/test_ecos/ECOSTest00.cpp.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build",
+  "command": "/usr/bin/c++ -Dcompute_EXPORTS  -std=c++17 -fPIC -o CMakeFiles/compute.dir/test_JuliaInterface/lib_compute.cpp.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/test_JuliaInterface/lib_compute.cpp",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/test_JuliaInterface/lib_compute.cpp",
+  "output": "CMakeFiles/compute.dir/test_JuliaInterface/lib_compute.cpp.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build",
+  "command": "/usr/bin/c++ -Dmtrctrl_EXPORTS  -std=c++17 -fPIC -o CMakeFiles/mtrctrl.dir/test_JuliaInterface/lib_mtrctrl.cpp.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/test_JuliaInterface/lib_mtrctrl.cpp",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/test_JuliaInterface/lib_mtrctrl.cpp",
+  "output": "CMakeFiles/mtrctrl.dir/test_JuliaInterface/lib_mtrctrl.cpp.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/external/amd/src/amd_1.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_1.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_1.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/external/amd/src/amd_1.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/external/amd/src/amd_2.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_2.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_2.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/external/amd/src/amd_2.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/external/amd/src/amd_aat.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_aat.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_aat.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/external/amd/src/amd_aat.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/external/amd/src/amd_control.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_control.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_control.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/external/amd/src/amd_control.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/external/amd/src/amd_defaults.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_defaults.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_defaults.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/external/amd/src/amd_defaults.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/external/amd/src/amd_dump.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_dump.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_dump.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/external/amd/src/amd_dump.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/external/amd/src/amd_global.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_global.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_global.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/external/amd/src/amd_global.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/external/amd/src/amd_info.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_info.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_info.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/external/amd/src/amd_info.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/external/amd/src/amd_order.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_order.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_order.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/external/amd/src/amd_order.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/external/amd/src/amd_post_tree.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_post_tree.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_post_tree.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/external/amd/src/amd_post_tree.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/external/amd/src/amd_postorder.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_postorder.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_postorder.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/external/amd/src/amd_postorder.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/external/amd/src/amd_preprocess.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_preprocess.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_preprocess.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/external/amd/src/amd_preprocess.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/external/amd/src/amd_valid.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_valid.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/src/amd_valid.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/external/amd/src/amd_valid.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/external/ldl/src/ldl.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/src/ldl.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/src/ldl.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/external/ldl/src/ldl.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/src/cone.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/cone.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/cone.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/src/cone.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/src/ctrlc.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/ctrlc.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/ctrlc.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/src/ctrlc.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/src/ecos.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/ecos.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/ecos.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/src/ecos.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/src/equil.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/equil.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/equil.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/src/equil.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/src/expcone.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/expcone.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/expcone.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/src/expcone.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/src/kkt.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/kkt.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/kkt.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/src/kkt.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/src/preproc.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/preproc.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/preproc.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/src/preproc.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/src/spla.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/spla.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/spla.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/src/spla.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/src/splamm.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/splamm.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/splamm.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/src/splamm.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/src/timer.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/timer.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/timer.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/src/timer.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/src/wright_omega.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/wright_omega.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/src/wright_omega.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/src/wright_omega.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/ecos_bb/ecos_bb.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/ecos_bb/ecos_bb.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/ecos_bb/ecos_bb.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/ecos_bb/ecos_bb.c.o"
+},
+{
+  "directory": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos",
+  "command": "/usr/bin/cc -DCTRLC=1 -DDLONG -DLDL_LONG -Decos_EXPORTS -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include -I/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config -fPIC -o CMakeFiles/ecos.dir/ecos_bb/ecos_bb_preproc.c.o -c /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/ecos_bb/ecos_bb_preproc.c",
+  "file": "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/ecos_bb/ecos_bb_preproc.c",
+  "output": "lib_ecos/CMakeFiles/ecos.dir/ecos_bb/ecos_bb_preproc.c.o"
+}
+]
