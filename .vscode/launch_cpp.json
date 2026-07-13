@@ -3,7 +3,7 @@
     "configurations": [
         {
             "name": "(gdb) Debug ECOSTest01",
-            "type": "cppdbg",
+            "type": "lldb",
             "request": "launch",
             "program": "${workspaceFolder}/build/ECOSTest01",
             "args": [],

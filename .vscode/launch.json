@@ -3,7 +3,7 @@
     "configurations": [
         {
             "name": "(gdb) Debug ECOSTest01",
-            "type": "cppdbg",
+            "type": "lldb",
             "request": "launch",
             "program": "${workspaceFolder}/build/ECOSTest01",
             "args": [],
@@ -32,7 +32,7 @@
         },
         {
             "name": "Attach to Julia Process (GDB)",
-            "type": "cppdbg",
+            "type": "lldb",
             "request": "attach",
             "program": "/usr/local/bin/julia",
             "processId": "${command:pickProcess}",

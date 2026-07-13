@@ -8,23 +8,23 @@
         "/opt/ros/jazzy/lib/python3.12/site-packages"
     ],
     "workbench.colorCustomizations": {
-        "activityBar.activeBackground": "#216124",
-        "activityBar.background": "#216124",
-        "activityBar.foreground": "#e7e7e7",
-        "activityBar.inactiveForeground": "#e7e7e799",
-        "activityBarBadge.background": "#1a1847",
+        "activityBar.activeBackground": "#86d084",
+        "activityBar.background": "#86d084",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#7577ca",
         "activityBarBadge.foreground": "#e7e7e7",
-        "commandCenter.border": "#e7e7e799",
-        "sash.hoverBorder": "#216124",
-        "statusBar.background": "#143b16",
-        "statusBar.foreground": "#e7e7e7",
-        "statusBarItem.hoverBackground": "#216124",
-        "statusBarItem.remoteBackground": "#143b16",
-        "statusBarItem.remoteForeground": "#e7e7e7",
-        "titleBar.activeBackground": "#143b16",
-        "titleBar.activeForeground": "#e7e7e7",
-        "titleBar.inactiveBackground": "#143b1699",
-        "titleBar.inactiveForeground": "#e7e7e799"
+        "commandCenter.border": "#15202b99",
+        "sash.hoverBorder": "#86d084",
+        "statusBar.background": "#62c25f",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#45ac42",
+        "statusBarItem.remoteBackground": "#62c25f",
+        "statusBarItem.remoteForeground": "#15202b",
+        "titleBar.activeBackground": "#62c25f",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#62c25f99",
+        "titleBar.inactiveForeground": "#15202b99"
     },
-    "peacock.remoteColor": "#143b16"
+    "peacock.remoteColor": "#62c25f"
 }

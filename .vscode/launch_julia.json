@@ -11,7 +11,7 @@
         },
         {
             "name": "Attach to Julia Process (GDB)",
-            "type": "cppdbg",
+            "type": "lldb",
             "request": "attach",
             "program": "/usr/local/bin/julia", // 必须替换为你的 Julia 可执行文件绝对路径
             "processId": "${command:pickProcess}",

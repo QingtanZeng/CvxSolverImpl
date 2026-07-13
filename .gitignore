@@ -2,5 +2,6 @@
 .vscode/browse.vc.db-shm
 .vscode/browse.vc.db
 .cache/
-build/CMakeFiles/
-build/lib_ecos/CMakeFiles/
+build/
+build_release/
+build_debug/

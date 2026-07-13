@@ -15,7 +15,6 @@ namespace {
 
   idxint ncones = 1;
   std::vector<idxint> q(ncones);
-  q[0] = 3;
 
   idxint nex = 0;
 
@@ -31,15 +30,17 @@ namespace {
 
 int main() {
 
+  q[0] = 3;
+
   A << 1.0, 1.0, 0.0,
        -1.0, 1.0, 0.0;
-  static Eigen::SparseMatrix<pfloat> Asp = A.sparseView(1, 1e-6);
+  static Eigen::SparseMatrix<pfloat, Eigen::ColMajor, idxint> Asp = A.sparseView(1, 1e-6);
   Asp.makeCompressed();
 
   G <<  0.0, 0.0, -1.0,
         -1.0, 0.0, 0.0, 
         0.0, -1.0, 0.0;
-  static Eigen::SparseMatrix<pfloat> Gsp = G.sparseView(1, 1e-6);
+  static Eigen::SparseMatrix<pfloat, Eigen::ColMajor, idxint> Gsp = G.sparseView(1, 1e-6);
   Gsp.makeCompressed();
 
   pwork* workspace = ECOS_setup(n, m, p, 
