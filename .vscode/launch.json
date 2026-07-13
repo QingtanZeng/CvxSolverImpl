@@ -15,6 +15,10 @@
             "initCommands": [
                 // 如果需要额外的 lldb 初始化命令写在这里，通常不需要 pretty-printing，lldb 原生支持很好
                 // "settings set target.x86-disassembly-flavor intel" // 例：设置汇编风格
+                // 1. 禁用预加载所有模块的符号（强制开启懒加载）
+                "settings set target.preload-symbols false",
+                // 2. 仅在命中异常时才去解析相关栈的符号，加速启动
+                "settings set target.process.stop-on-sharedlibrary-events false"
             ],
             // 强制指定 lldb-dap 的路径 (如果它不在系统默认 PATH 中)
             // "lldb-dap": "/usr/bin/lldb-dap-18", 
