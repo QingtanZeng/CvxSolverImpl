@@ -7,15 +7,17 @@
       },
       "includePath": [
         "/opt/ros/jazzy/include/**",
-        "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include/**",
-        "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_scs/scs-master/include/**",
+        "${workspaceFolder}/lib_ecos/include/**",
+        "${workspaceFolder}/lib_scs/scs-master/include/**",
+        "/usr/include/eigen3/**",
         "/usr/include/**"
       ],
-      "name": "ros2",
-      "intelliSenseMode": "gcc-x64",
-      "compilerPath": "/usr/bin/gcc",
-      "cStandard": "gnu11",
-      "cppStandard": "c++17"
+      "name": "Linux",
+      "intelliSenseMode": "linux-clang-x64",
+      "compilerPath": "/usr/bin/clang++",
+      "cStandard": "c17",
+      "cppStandard": "c++20",
+      "compileCommands": "${workspaceFolder}/build/compile_commands.json"
     }
   ],
   "version": 4

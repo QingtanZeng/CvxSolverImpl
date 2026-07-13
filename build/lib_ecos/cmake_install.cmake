@@ -1,4 +1,4 @@
-# Install script for directory: /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos
+# Install script for directory: /home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -49,7 +49,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libecos.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos/libecos.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/zengqt/Projects_WSL/CvxSolverImpl/build/lib_ecos/libecos.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libecos.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libecos.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -63,20 +63,20 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ecos" TYPE FILE FILES
-    "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config/SuiteSparse_config.h"
-    "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include/cone.h"
-    "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include/ctrlc.h"
-    "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include/data.h"
-    "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include/ecos.h"
-    "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include/ecos_bb.h"
-    "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include/equil.h"
-    "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include/expcone.h"
-    "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include/glblopts.h"
-    "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include/kkt.h"
-    "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include/spla.h"
-    "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include/splamm.h"
-    "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include/timer.h"
-    "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include/wright_omega.h"
+    "/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/external/SuiteSparse_config/SuiteSparse_config.h"
+    "/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/include/cone.h"
+    "/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/include/ctrlc.h"
+    "/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/include/data.h"
+    "/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/include/ecos.h"
+    "/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/include/ecos_bb.h"
+    "/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/include/equil.h"
+    "/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/include/expcone.h"
+    "/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/include/glblopts.h"
+    "/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/include/kkt.h"
+    "/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/include/spla.h"
+    "/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/include/splamm.h"
+    "/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/include/timer.h"
+    "/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/include/wright_omega.h"
     )
 endif()
 
@@ -84,7 +84,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/ecos/ecos-targets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/ecos/ecos-targets.cmake"
-         "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos/CMakeFiles/Export/1486f10f4b53bd9f1a0cd8f44f37b237/ecos-targets.cmake")
+         "/home/zengqt/Projects_WSL/CvxSolverImpl/build/lib_ecos/CMakeFiles/Export/1486f10f4b53bd9f1a0cd8f44f37b237/ecos-targets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/ecos/ecos-targets-*.cmake")
       if(_cmake_old_config_files)
@@ -97,13 +97,13 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ecos" TYPE FILE FILES "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos/CMakeFiles/Export/1486f10f4b53bd9f1a0cd8f44f37b237/ecos-targets.cmake")
-  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ecos" TYPE FILE FILES "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos/CMakeFiles/Export/1486f10f4b53bd9f1a0cd8f44f37b237/ecos-targets-noconfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ecos" TYPE FILE FILES "/home/zengqt/Projects_WSL/CvxSolverImpl/build/lib_ecos/CMakeFiles/Export/1486f10f4b53bd9f1a0cd8f44f37b237/ecos-targets.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ecos" TYPE FILE FILES "/home/zengqt/Projects_WSL/CvxSolverImpl/build/lib_ecos/CMakeFiles/Export/1486f10f4b53bd9f1a0cd8f44f37b237/ecos-targets-debug.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ecos" TYPE FILE FILES "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos/ecos-config.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/ecos" TYPE FILE FILES "/home/zengqt/Projects_WSL/CvxSolverImpl/build/lib_ecos/ecos-config.cmake")
 endif()
 

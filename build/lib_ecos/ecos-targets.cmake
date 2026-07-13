@@ -51,14 +51,14 @@ add_library(ecos::ecos SHARED IMPORTED)
 
 set_target_properties(ecos::ecos PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "CTRLC=1;LDL_LONG;DLONG"
-  INTERFACE_INCLUDE_DIRECTORIES "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/include;/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/amd/include;/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/ldl/include;/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/lib_ecos/external/SuiteSparse_config"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/include;/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/external/amd/include;/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/external/ldl/include;/home/zengqt/Projects_WSL/CvxSolverImpl/lib_ecos/external/SuiteSparse_config"
 )
 
-# Import target "ecos::ecos" for configuration ""
-set_property(TARGET ecos::ecos APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
+# Import target "ecos::ecos" for configuration "Debug"
+set_property(TARGET ecos::ecos APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(ecos::ecos PROPERTIES
-  IMPORTED_LOCATION_NOCONFIG "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos/libecos.so"
-  IMPORTED_SONAME_NOCONFIG "libecos.so"
+  IMPORTED_LOCATION_DEBUG "/home/zengqt/Projects_WSL/CvxSolverImpl/build/lib_ecos/libecos.so"
+  IMPORTED_SONAME_DEBUG "libecos.so"
   )
 
 # This file does not depend on other imported targets which have

@@ -25,7 +25,7 @@ c = [0.0, 0.0, 1.0]
 # x₁ = 1
 # x₂ = 2
 A = sparse([1.0 1.0 0.0; -1.0 1.0 0.0])
-b = [2.0; -2]
+b = [2.0; 0.0]
 p = length(b)
 
 # Conic constraints: h - Gx ∈ K

@@ -1,4 +1,4 @@
-# Install script for directory: /home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest
+# Install script for directory: /home/zengqt/Projects_WSL/CvxSolverImpl
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/lib_ecos/cmake_install.cmake")
+  include("/home/zengqt/Projects_WSL/CvxSolverImpl/build/lib_ecos/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/zengqt/Projects_Linux/Projects_zengqt/OptSolverTest/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zengqt/Projects_WSL/CvxSolverImpl/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
