@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Visual Studio 2017 Light - C++",
+    "workbench.colorTheme": "Visual Studio Light",
     "ROS2.distro": "jazzy",
     "python.autoComplete.extraPaths": [
         "/opt/ros/jazzy/lib/python3.12/site-packages"
@@ -26,5 +26,6 @@
         "titleBar.inactiveBackground": "#62c25f99",
         "titleBar.inactiveForeground": "#15202b99"
     },
-    "peacock.remoteColor": "#62c25f"
+    "peacock.remoteColor": "#62c25f",
+    "lldb-dap.executable-path": "/usr/bin/lldb-dap-18"
 }

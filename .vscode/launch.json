@@ -2,24 +2,22 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(gdb) Debug ECOSTest01",
-            "type": "lldb",
+            "name": "(lldb) Debug ECOSTest01",
+            "type": "lldb-dap", // 保持为 lldb-dap 引擎
             "request": "launch",
-            "program": "${workspaceFolder}/build/ECOSTest01",
+            "program": "${workspaceFolder}/build_debug/ECOSTest01",
             "args": [],
-            "stopAtEntry": false,
+            "stopOnEntry": false, // 注意：官方 DAP 拼写通常是 stopOnEntry 而不是 stopAtEntry
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "/usr/bin/gdb",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
+            // ---- 以下是 LLDB 专用的配置参数 ----
+            // 替代原先 GDB 的 setupCommands
+            "initCommands": [
+                // 如果需要额外的 lldb 初始化命令写在这里，通常不需要 pretty-printing，lldb 原生支持很好
+                // "settings set target.x86-disassembly-flavor intel" // 例：设置汇编风格
             ],
+            // 强制指定 lldb-dap 的路径 (如果它不在系统默认 PATH 中)
+            // "lldb-dap": "/usr/bin/lldb-dap-18", 
             "preLaunchTask": "CMake Build ECOSTest01"
         },
         {
