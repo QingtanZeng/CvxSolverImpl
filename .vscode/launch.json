@@ -3,22 +3,23 @@
     "configurations": [
         {
             "name": "(lldb) Debug ECOSTest01",
-            "type": "lldb-dap", // 保持为 lldb-dap 引擎
+            "type": "lldb", // 保持为 lldb-dap 引擎
             "request": "launch",
             "program": "${workspaceFolder}/build_debug/ECOSTest01",
             "args": [],
             "stopOnEntry": false, // 注意：官方 DAP 拼写通常是 stopOnEntry 而不是 stopAtEntry
             "cwd": "${workspaceFolder}",
             "environment": [],
+            // "runInTerminal": false, // 【关键修复】禁用独立终端拉起，强行在 Debug Console 捕获输出
             // ---- 以下是 LLDB 专用的配置参数 ----
             // 替代原先 GDB 的 setupCommands
             "initCommands": [
                 // 如果需要额外的 lldb 初始化命令写在这里，通常不需要 pretty-printing，lldb 原生支持很好
                 // "settings set target.x86-disassembly-flavor intel" // 例：设置汇编风格
                 // 1. 禁用预加载所有模块的符号（强制开启懒加载）
-                "settings set target.preload-symbols false",
+                // "settings set target.preload-symbols false",
                 // 2. 仅在命中异常时才去解析相关栈的符号，加速启动
-                "settings set target.process.stop-on-sharedlibrary-events false"
+                // "settings set target.process.stop-on-sharedlibrary-events false"
             ],
             // 强制指定 lldb-dap 的路径 (如果它不在系统默认 PATH 中)
             // "lldb-dap": "/usr/bin/lldb-dap-18", 
