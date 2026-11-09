@@ -6,18 +6,25 @@
         "limitSymbolsToIncludedHeaders": false
       },
       "includePath": [
-        "/opt/ros/jazzy/include/**",
+        "${workspaceFolder}/lib_SuiteSparse/AMD/Include/**",
+        "${workspaceFolder}/lib_SuiteSparse/LDL/Include/**",
+        "${workspaceFolder}/lib_SuiteSparse/SuiteSparse_config/**",
+        "${workspaceFolder}/lib_SuiteSparse/include/**",
         "${workspaceFolder}/lib_ecos/include/**",
+        "${workspaceFolder}/lib_ecos/external/amd/include/**",
+        "${workspaceFolder}/lib_ecos/external/ldl/include/**",
+        "${workspaceFolder}/lib_ecos/external/SuiteSparse_config/**",
         "${workspaceFolder}/lib_scs/scs-master/include/**",
         "/usr/include/eigen3/**",
+        "/opt/ros/jazzy/include/**",
         "/usr/include/**"
       ],
       "name": "Linux",
       "intelliSenseMode": "linux-clang-x64",
-      "compilerPath": "/usr/bin/clang++",
+      "compilerPath": "/usr/bin/clang++-18",
       "cStandard": "c17",
-      "cppStandard": "c++20",
-      "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+      "cppStandard": "c++23",
+      "compileCommands": "${workspaceFolder}/build_debug/compile_commands.json"
     }
   ],
   "version": 4

@@ -2,14 +2,45 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "CMake Build ECOSTest01",
+            "label": "CMake Build tst_AMD",
             "type": "shell",
-            "command": "cmake --build build_debug --target ECOSTest01",
+            "command": "cmake --build build_debug --target tst_AMD -j4",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Compile test_SuiteSparse/tst_AMD.cpp using LLVM18 / C++23"
+        },
+        {
+            "label": "CMake Build ECOSTest01",
+            "type": "shell",
+            "command": "cmake --build build_debug --target ECOSTest01 -j4",
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
             "detail": "Compile test_ecos/ECOSTest01.cpp"
+        },
+        {
+            "label": "CMake Build All",
+            "type": "shell",
+            "command": "cmake --build build_debug -j4",
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Build all targets in build_debug using LLVM18"
+        },
+        {
+            "label": "CMake Configure Debug (LLVM18)",
+            "type": "shell",
+            "command": "cmake -B build_debug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=clang-18 -DCMAKE_CXX_COMPILER=clang++-18",
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "Configure CMake with LLVM18 toolchain and C++23"
         }
     ]
 }

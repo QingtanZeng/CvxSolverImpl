@@ -27,5 +27,23 @@
         "titleBar.inactiveForeground": "#15202b99"
     },
     "peacock.remoteColor": "#62c25f",
-    "lldb-dap.executable-path": "/usr/bin/lldb-dap-18"
+
+    // CodeLLDB 与 LLVM 18 调试器配置
+    "lldb.executable": "/usr/bin/lldb-18",
+    "lldb-dap.executable-path": "/usr/bin/lldb-dap-18",
+
+    // CMake 与 LLVM 18 工具链集成
+    "cmake.buildDirectory": "${workspaceFolder}/build_debug",
+    "cmake.configureSettings": {
+        "CMAKE_C_COMPILER": "/usr/bin/clang-18",
+        "CMAKE_CXX_COMPILER": "/usr/bin/clang++-18",
+        "CMAKE_CXX_STANDARD": "23"
+    },
+
+    // C/C++ 智能提示与标准配置 (LLVM 18 / C++23)
+    "C_Cpp.default.compilerPath": "/usr/bin/clang++-18",
+    "C_Cpp.default.cppStandard": "c++23",
+    "C_Cpp.default.cStandard": "c17",
+    "C_Cpp.default.intelliSenseMode": "linux-clang-x64",
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build_debug/compile_commands.json"
 }
