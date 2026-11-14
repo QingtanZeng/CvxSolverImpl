@@ -4,7 +4,7 @@
         {
             "label": "CMake Build tst_AMD",
             "type": "shell",
-            "command": "cmake --build build_debug --target tst_AMD -j4",
+            "command": "cmake --build build --target tst_AMD -j4",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -17,7 +17,7 @@
         {
             "label": "CMake Build ECOSTest01",
             "type": "shell",
-            "command": "cmake --build build_debug --target ECOSTest01 -j4",
+            "command": "cmake --build build --target ECOSTest01 -j4",
             "group": "build",
             "problemMatcher": [
                 "$gcc"
@@ -27,17 +27,17 @@
         {
             "label": "CMake Build All",
             "type": "shell",
-            "command": "cmake --build build_debug -j4",
+            "command": "cmake --build build -j4",
             "group": "build",
             "problemMatcher": [
                 "$gcc"
             ],
-            "detail": "Build all targets in build_debug using LLVM18"
+            "detail": "Build all targets in build using LLVM18"
         },
         {
             "label": "CMake Configure Debug (LLVM18)",
             "type": "shell",
-            "command": "cmake -B build_debug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=clang-18 -DCMAKE_CXX_COMPILER=clang++-18",
+            "command": "cmake -B build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=clang-18 -DCMAKE_CXX_COMPILER=clang++-18",
             "group": "build",
             "problemMatcher": [],
             "detail": "Configure CMake with LLVM18 toolchain and C++23"
