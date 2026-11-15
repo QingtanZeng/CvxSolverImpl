@@ -40,6 +40,15 @@
             "preLaunchTask": "CMake Build LDLT_RunSlv"
         },
         {
+            "name": "(python) Debug LDLT_build.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/test_SuiteSparse/LDLT_build.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/test_SuiteSparse",
+            "justMyCode": true
+        },
+        {
             "name": "(lldb) Debug ECOSTest01",
             "type": "lldb",
             "request": "launch",

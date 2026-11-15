@@ -55,5 +55,7 @@
     "C_Cpp.default.cppStandard": "c++23",
     "C_Cpp.default.cStandard": "c17",
     "C_Cpp.default.intelliSenseMode": "linux-clang-x64",
-    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json"
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda"
 }
