@@ -14,6 +14,32 @@
             "preLaunchTask": "CMake Build tst_AMD"
         },
         {
+            "name": "(lldb) Debug LDLT_PreCalc",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/LDLT_PreCalc",
+            "args": [
+                "${workspaceFolder}/build/test_SuiteSparse/generated/generated_symbolic.hpp"
+            ],
+            "stopOnEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "terminal": "integrated",
+            "preLaunchTask": "CMake Build LDLT_PreCalc"
+        },
+        {
+            "name": "(lldb) Debug LDLT_RunSlv",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/LDLT_RunSlv",
+            "args": [],
+            "stopOnEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "terminal": "integrated",
+            "preLaunchTask": "CMake Build LDLT_RunSlv"
+        },
+        {
             "name": "(lldb) Debug ECOSTest01",
             "type": "lldb",
             "request": "launch",

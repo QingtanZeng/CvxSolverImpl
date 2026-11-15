@@ -15,6 +15,26 @@
             "detail": "Compile test_SuiteSparse/tst_AMD.cpp using LLVM18 / C++23"
         },
         {
+            "label": "CMake Build LDLT_PreCalc",
+            "type": "shell",
+            "command": "cmake --build build --target LDLT_PreCalc -j4",
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Compile Stage 1 Host PreCalc (test_SuiteSparse/LDLT_PreCalc.cpp)"
+        },
+        {
+            "label": "CMake Build LDLT_RunSlv",
+            "type": "shell",
+            "command": "cmake --build build --target LDLT_RunSlv -j4",
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Generate symbolic header and compile Stage 2 Target Solver (test_SuiteSparse/LDLT_RunSlv.cpp)"
+        },
+        {
             "label": "CMake Build ECOSTest01",
             "type": "shell",
             "command": "cmake --build build --target ECOSTest01 -j4",
