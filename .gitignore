@@ -4,4 +4,6 @@
 .cache/
 build/
 build_release/
-build/
+test_SuiteSparse/build_host/
+test_SuiteSparse/build_target/
+test_SuiteSparse/build_artifacts/

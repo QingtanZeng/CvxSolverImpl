@@ -53,6 +53,30 @@ if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/lib_SuiteSparse/CMakeLists.txt")
     add_executable(tst_AMD test_SuiteSparse/tst_AMD.cpp)
     set_target_properties(tst_AMD PROPERTIES CXX_STANDARD 23 CXX_STANDARD_REQUIRED ON)
     target_link_libraries(tst_AMD PRIVATE SuiteSparse::AMD SuiteSparse::LDL SuiteSparse::SuiteSparseConfig Eigen3::Eigen)
+
+    # ------------------------------------------
+    # Host-Target Two-Stage Build (LDLT_PreCalc -> generated_symbolic.hpp -> LDLT_RunSlv)
+    # ------------------------------------------
+    set(LDLT_GEN_DIR "${CMAKE_CURRENT_BINARY_DIR}/test_SuiteSparse/generated")
+    set(LDLT_GEN_HEADER "${LDLT_GEN_DIR}/generated_symbolic.hpp")
+
+    add_executable(LDLT_PreCalc test_SuiteSparse/LDLT_PreCalc.cpp)
+    set_target_properties(LDLT_PreCalc PROPERTIES CXX_STANDARD 23 CXX_STANDARD_REQUIRED ON)
+    target_link_libraries(LDLT_PreCalc PRIVATE SuiteSparse::AMD SuiteSparse::LDL SuiteSparse::SuiteSparseConfig)
+
+    add_custom_command(
+        OUTPUT "${LDLT_GEN_HEADER}"
+        COMMAND ${CMAKE_COMMAND} -E make_directory "${LDLT_GEN_DIR}"
+        COMMAND $<TARGET_FILE:LDLT_PreCalc> "${LDLT_GEN_HEADER}"
+        DEPENDS LDLT_PreCalc
+        COMMENT "[Stage 1] Running LDLT_PreCalc to generate ${LDLT_GEN_HEADER}"
+        VERBATIM
+    )
+
+    add_executable(LDLT_RunSlv test_SuiteSparse/LDLT_RunSlv.cpp "${LDLT_GEN_HEADER}")
+    set_target_properties(LDLT_RunSlv PROPERTIES CXX_STANDARD 23 CXX_STANDARD_REQUIRED ON)
+    target_include_directories(LDLT_RunSlv PRIVATE "${LDLT_GEN_DIR}")
+    target_compile_options(LDLT_RunSlv PRIVATE -fno-exceptions -fno-rtti -Wall -Wextra)
 endif()
 
 
